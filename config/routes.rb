@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   root "home#index"
   # match "/", to: "home#index", via: :get
   # get "/", to: "home#index"
+
+  get "about", to: "home#about"
 end
