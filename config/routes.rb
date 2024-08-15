@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   # match "/", to: "home#index", via: :get
   # get "/", to: "home#index"
 
-  get "about", to: "home#about"
+  get "about", to: "home#about", as: "about"
 end
