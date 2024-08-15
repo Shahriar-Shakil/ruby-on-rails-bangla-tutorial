@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get "about", to: "home#about", as: "about"
   get "hello", to: "hello#index", as: "hello"
   get "books", to: "books#index"
-  get "book", to: "books#show"
+  # get "book", to: "books#show"
+  get "books/:id", to: "books#show", as: "book"
 end

@@ -1,4 +1,26 @@
 <h1>Single book Page</h1>
 <br>
-<h3>Book id: <%= @params[:id] %></h3>
-<h3>Book Name: <%= @params[:name] %></h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Description</th>
+      <th scope="col">Author</th>
+      <th scope="col">Available</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><%= @book.id %></th>
+      <td><%= @book.name %></td>
+      <td>$<%= @book.price %> </td>
+      <td><%= @book.description %></td>
+      <td><%= @book.auther %></td>
+      <td><%= @book.available ? "Item is Available" : "Stock out" %></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<%= link_to "Back to List", books_path  %> <br>
