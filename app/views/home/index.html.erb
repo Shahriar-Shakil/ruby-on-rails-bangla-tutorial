@@ -1,10 +1,13 @@
-<%= link_to "About", about_path %>
+<h1>Book store</h1>
 <br>
 <ul>
-  <% books.each do |book| %>
+  <% @books.each do |book| %>
     <li>
       <%= book %>
     </li>
   <% end %>
 </ul>
-<h1>This is home page</h1>
+<br>
+<%#  link_to "About", about_path(name:"MD Shahriar",id:10) %>
+<%# link_to "About", {action:"about",id:5,name:"Shahriar"} %>
+<%= link_to "Hello", {controller:"hello", action:"index",id:5,name:"Shahriar"} %>

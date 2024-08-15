@@ -7,6 +7,7 @@ class HomeController < ApplicationController
     # redirect_to action: :index
     # redirect_to "https://www.google.com/", allow_other_host: true
     # instance variable
-    @name = "Shahriar"
+    @name = params[:name]
+    @id = params[:id]
   end
 end
