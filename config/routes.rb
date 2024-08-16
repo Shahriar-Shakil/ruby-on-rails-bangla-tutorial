@@ -11,5 +11,8 @@ Rails.application.routes.draw do
   get "hello", to: "hello#index", as: "hello"
   get "books", to: "books#index"
   # get "book", to: "books#show"
+  get "books/new", to: "books#new"
+
   get "books/:id", to: "books#show", as: "book"
+  post "books", to: "books#create"
 end

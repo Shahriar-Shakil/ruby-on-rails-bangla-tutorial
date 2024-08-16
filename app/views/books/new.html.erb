@@ -1,0 +1,38 @@
+<h1>Add new Book</h1>
+<%= form_with model: @book do |form| %>
+  <table>
+    <tr>
+      <th style="text-align: left">Name</th>
+      <td>
+        <%= form.text_field :name %>
+      </td>
+    </tr>
+    <tr>
+      <th style="text-align: left">Description</th>
+      <td>
+        <%= form.text_area :description %>
+      </td>
+    </tr>
+    <tr>
+      <th style="text-align: left">Author</th>
+      <td>
+        <%= form.text_field :author %>
+      </td>
+    </tr>
+    <tr>
+      <th style="text-align: left">Price</th>
+      <td>
+        <%= form.number_field :price %>
+      </td>
+    </tr>
+    <tr>
+      <th style="text-align: left">Available</th>
+      <td>
+        <%= form.check_box :available %>
+      </td>
+    </tr>
+  </table>
+  <div>
+    <%=  form.submit %>
+  </div>
+<% end %>
