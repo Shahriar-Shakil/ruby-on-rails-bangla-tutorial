@@ -1,5 +1,5 @@
 <h1>Update book</h1>
 <%= @book.name %>
-<%= render partial: "form", locals:{form:@book} %>
+<%= render partial: "form", locals:{form_object:@book} %>
 <br>
 <%= link_to "Back to List", books_path,class:'btn btn-dark'  %>
