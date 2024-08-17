@@ -1,7 +1,7 @@
 <%= link_to "Back to Home", root_path  %> <br>
 <br>
 <h1>Books List</h1>
-<%= link_to "Create New Book", books_new_path  %>
+<%= link_to "Create New Book", new_book_path  %>
 <table class="table">
   <thead>
     <tr>
@@ -18,7 +18,7 @@
         <td>
           <%= link_to "Show", book  %>
           <%= link_to "Edit", edit_book_path(book) %>
-          <%= link_to "Delete" %>
+          <%= button_to "Delete",book,method: :delete  %>
         </td>
       </tr>
     <% end %>
